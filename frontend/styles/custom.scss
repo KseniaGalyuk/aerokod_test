@@ -1,0 +1,155 @@
+// .advantages
+.advantages {
+  & .swiper-slide {
+    transition: opacity 0.4s ease 0.2s;
+    &:not(.swiper-slide-active, .swiper-slide-duplicate-active) {
+      @apply opacity-30;
+      .item-advantage__body {
+        transition: transform 0.3s ease 0s;
+        @apply -translate-y-full;
+      }
+      .item-advantage__image {
+        transition: border-radius 0.3s ease 0s;
+        @media (min-width: 449.98px) {
+          @apply rounded-20;
+        }
+        @media (max-width: 449.98px) {
+          @apply rounded-xl;
+        }
+      }
+    }
+    &.swiper-slide-active .item-advantage,
+    &.swiper-slide-duplicate-active .item-advantage {
+      transition: transform 0.3s ease 0s;
+    }
+    &.swiper-slide-active .item-advantage__wrapper,
+    &.swiper-slide-duplicate-active .item-advantage__wrapper {
+      transition: transform 0.3s ease 0.3s;
+    }
+    @media (min-width: 767.98px) {
+      &.swiper-slide-prev .item-advantage__wrapper,
+      &.swiper-slide-duplicate-prev .item-advantage__wrapper {
+        @apply scale-90;
+      }
+      &.swiper-slide-prev .item-advantage,
+      &.swiper-slide-duplicate-prev .item-advantage {
+        @media (min-width: 1629.98px) {
+          transform: skew(0deg, -1.5deg) translateY(25px) translateX(10px);
+        }
+        @media (max-width: 1629.98px) and (min-width: 1369.98px) {
+          transform: skew(0deg, -1.5deg) translateY(20px) translateX(10px);
+        }
+        @media (max-width: 1369.98px) {
+          transform: skew(0deg, -1.5deg) translateY(15px) translateX(10px);
+        }
+      }
+      &.swiper-slide-next .item-advantage,
+      &.swiper-slide-duplicate-next .item-advantage {
+        @media (min-width: 1629.98px) {
+          transform: skew(0deg, 1.5deg) translateY(25px) translateX(-10px);
+        }
+        @media (max-width: 1629.98px) and (min-width: 1369.98px) {
+          transform: skew(0deg, 1.5deg) translateY(20px) translateX(-10px);
+        }
+        @media (max-width: 1369.98px) {
+          transform: skew(0deg, 1.5deg) translateY(15px) translateX(-10px);
+        }
+      }
+      &.swiper-slide-next .item-advantage__wrapper,
+      &.swiper-slide-duplicate-next .item-advantage__wrapper {
+        @apply scale-90;
+      }
+    }
+  }
+  // .advantages__controls
+  &__controls {
+    @media (min-width: 991.98px) {
+      &:not(:first-child) {
+        @apply ml-8;
+      }
+    }
+  }
+}
+// .item-advantages
+.item-advantage {
+  transition: transform 0.3s ease 0.3s;
+  // .item-advantages__wrapper
+  &__wrapper {
+    z-index: 3;
+    transition: transform 0.3s ease 0s;
+  }
+  // .item-advantages__top
+  &__top {
+    padding-top: 56.8245%;
+  }
+  // .item-advantages__image
+  &__image {
+    @media (min-width: 449.98px) {
+      border-radius: 20px 20px 0 0;
+    }
+    @media (max-width: 449.98px) {
+      border-radius: 12px 12px 0 0;
+    }
+    transition: border-radius 0.3s ease 0.2s;
+  }
+  // .item-advantages__body
+  &__body {
+    @media (min-width: 449.98px) {
+      border-radius: 0 0 20px 20px;
+    }
+    @media (max-width: 449.98px) {
+      border-radius: 0 0 12px 12px;
+    }
+    transition: transform 0.3s ease 0.2s;
+    z-index: -1;
+    @media (min-width: 767.98px) {
+      padding-bottom: 42px;
+    }
+    @media (max-width: 767.98px) {
+      padding-bottom: 30px;
+    }
+  }
+  // .item-advantages__title
+  &__title {
+    &:not(:last-child) {
+      @media (min-width: 767.98px) {
+        @apply mb-3;
+      }
+      @media (max-width: 767.98px) {
+        @apply mb-2;
+      }
+    }
+  }
+}
+// .controls
+.controls {
+  height: 50px;
+  // .controls__arrow
+  &__arrow {
+    &:not(.swiper-button-disabled) {
+      @media (any-hover: hover) {
+        &:hover {
+          @apply bg-blue border-blue;
+          path {
+            @apply stroke-white;
+          }
+        }
+      }
+    }
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    transition:
+      background 0.3s ease 0s,
+      opacity 0.3s ease 0s;
+    path {
+      transition: stroke 0.3s ease 0s;
+    }
+    &.swiper-button-lock {
+      @apply opacity-0 cursor-default pointer-events-none;
+    }
+    &.swiper-button-disabled {
+      @apply opacity-50 cursor-default;
+    }
+  }
+}

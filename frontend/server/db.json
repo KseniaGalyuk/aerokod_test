@@ -1,0 +1,39 @@
+{
+  "slider": {
+    "title": "Есть всё, что бы наполнить жизнь счастьем",
+    "items": [
+      {
+        "id": 1,
+        "title": "Благоустройство квартала 1",
+        "description": "Благоустройство квартала насыщенно различными локациями, которые жители могут посещать свободно. В их распоряжении банный комплекс высокого уровня, спортивные студии, плей-хаб с игровыми площадками для всех возрастов",
+        "image": {
+          "src": "/images/slider/1.png"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Благоустройство квартала 2",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit odio odit voluptatibus, inventore repellendus recusandae repudiandae nesciunt earum, deleniti amet. Et adipisci voluptate dicta quod, odio fugiat fuga ipsa?",
+        "image": {
+          "src": "/images/slider/1.png"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Благоустройство квартала 3",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit odio odit voluptatibus, inventore repellendus recusandae",
+        "image": {
+          "src": "/images/slider/1.png"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Благоустройство квартала 4",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit odio odit voluptatibus, inventore repellendus recusandae repudiandae nesciunt earum, deleniti amet. Et adipisci voluptate dicta quod, odio fugiat fuga ipsa?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit odio odit voluptatibus, inventore repellendus recusandae repudiandae nesciunt earum, deleniti amet. Et adipisci voluptate dicta quod, odio fugiat fuga ipsa?",
+        "image": {
+          "src": "/images/slider/1.png"
+        }
+      }
+    ]
+  }
+}
